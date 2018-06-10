@@ -1,0 +1,8 @@
+def multiples_of_3_or_5():
+    for number in range(1000):
+        if not number % 3 or not number % 5:
+            yield number
+            
+            
+problem1 = sum(multiples_of_3_or_5())  
+print(problem1)
